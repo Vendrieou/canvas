@@ -1,0 +1,56 @@
+<!--     <canvas id="myCanvas" width="200" height="200"></canvas> -->
+    <canvas id="mySmile" width="200" height="200"></canvas>
+<script>
+  
+//    var myCanvas = document.getElementById('myCanvas')
+//     var myCtx = myCanvas.getContext('2d');
+//     myCtx.strokeRect(10,10, 180, 180);
+//     myCtx.clearRect(50,50, 100, 100);
+  
+// myContext.beginPath();
+// myContext.moveTo(0,0);
+// myContext.lineTo(200,0);
+// myContext.closePath();
+
+ // #2
+//   var myCanvas = document.getElementById('myCanvas')
+//     var myContext = myCanvas.getContext('2d');
+//     var ctx = myContext;
+
+//     myContext.beginPath();
+//     for(i=0; i<201; i++){
+
+//     myContext.moveTo(0,i);
+//     myContext.lineTo(200,i);
+//     i+=10;
+//     }
+
+//     for(i=0; i<201; i++){
+
+//     myContext.moveTo(i,0);
+//     myContext.lineTo(i, 200);
+//     i+=10;
+//     }
+//     myContext.stroke();
+
+  //#3
+  var mySmile = document.getElementById('mySmile')
+    var smileCtx = mySmile.getContext('2d');
+
+    smileCtx.beginPath();
+    smileCtx.arc(100,100,99,0,Math.PI*2); // head
+    smileCtx.moveTo(170,100);
+    smileCtx.arc(100,100,70,0,Math.PI);   // Mouth
+    smileCtx.stroke();
+
+    smileCtx.beginPath();
+    smileCtx.moveTo(60, 65);
+    smileCtx.arc(60,65,12,0,Math.PI*2);  // Left eye
+    smileCtx.fill();
+
+    smileCtx.beginPath();
+    smileCtx.moveTo(140,65);
+    smileCtx.arc(140,65,12,0,Math.PI*2);  // Right eye
+    smileCtx.fill();
+
+</script>
